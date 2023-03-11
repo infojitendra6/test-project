@@ -1,0 +1,23 @@
+const configVariables = {
+  stage: process.env.STAGE || "local",
+  mongoURL: process.env.MONGO_URL || "mongodb://localhost:27017/examadda",
+  PORT: Number(process.env.PORT) || 8000,
+  secret: process.env.SECRET || "",
+  AWS_ACCESS_KEY: process.env.AWS_ACCESS_KEY || "",
+  AWS_SECRET_KEY: process.env.AWS_SECRET_KEY || "",
+  AWS_DEFAULT_REGION: process.env.AWS_DEFAULT_REGION || "",
+  S3_BUCKET: process.env.S3_BUCKET || "",
+  PM2_MACHINE_NAME: process.env.PM2_MACHINE_NAME || "",
+  PM2_PRIVATE_KEY: process.env.PM2_PRIVATE_KEY || "",
+  PM2_PUBLIC_KEY: process.env.PM2_PUBLIC_KEY || "",
+  APP_INSTANCE_COUNT: Number(process.env.APP_INSTANCE_COUNT) || 1,
+  APP_MAX_MEMORY: Number(process.env.APP_MAX_MEMORY) || 256,
+  WORKER_CONCURRENCY: Number(process.env.WORKER_CONCURRENCY) || 1,
+  SQS_ENVIRONMENT_NAME: process.env.SQS_ENVIRONMENT_NAME || "",
+  SQS_KUE_URL: process.env.SQS_KUE_URL || "",
+  SENTRY_API: process.env.SENTRY_API || "",
+  SENTRY_WORKER: process.env.SENTRY_WORKER || "",
+  RZP_PUBLIC_KEY: process.env.RAZORPAY_KEY || "",
+  RZP_PRIVATE_KEY: process.env.RAZORPAY_SECRET || "",
+}
+export default configVariables;

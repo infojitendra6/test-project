@@ -1,0 +1,12 @@
+.env
+.DS_Store
+node_modules/
+npm-debug.log
+newrelic_agent.log
+.idea/
+dump.rdb
+.vscode/
+coverage/
+.nyc_output/
+package-lock.json
+dist/
